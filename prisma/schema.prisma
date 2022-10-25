@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Match {
+  id             Int  @id @default(autoincrement())
+  homeTeam       Json
+  awayTeam       Json
+  homeScore      Json
+  awayScore      Json
+  hasGlobalHighlights Boolean?
+  finalResultOnly Boolean?
+  customId      String?
+  status         Json?
+  hasEventPlayerStatistics Boolean?
+  slug           String?
+  homeRedCards   Int?
+  hasEventPlayerHeatMap Boolean?
+  changes        Json?
+  roundInfo     Json?
+  tournament   Json?
+  time           Json?
+  coverage       Int?
+  startTimestamp Int
+  winnerCode     Int?
+}

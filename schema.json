@@ -1,0 +1,127 @@
+
+       {
+        "homeScore": {
+          "current": 2,
+          "period2": 0,
+          "normaltime": 2,
+          "period1": 2,
+          "display": 2
+        },
+        "hasGlobalHighlights": true,
+        "finalResultOnly": false,
+        "customId": "hOsrO",
+        "status": {
+          "type": "finished",
+          "code": 100,
+          "description": "Ended"
+        },
+        "hasEventPlayerStatistics": true,
+        "slug": "athletico-corinthians",
+        "homeRedCards": null,
+        "hasEventPlayerHeatMap": true,
+        "changes": {
+          "changeTimestamp": 1665280550,
+          "changes": [
+            "time.currentPeriodStart",
+            "status.code",
+            "status.description",
+            "status.type",
+            "homeScore.period2",
+            "homeScore.normaltime",
+            "awayScore.period2",
+            "awayScore.normaltime"
+          ]
+        },
+        "roundInfo": {
+          "round": 31
+        },
+        "tournament": {
+          "id": 83,
+          "uniqueTournament": {
+            "hasEventPlayerStatistics": true,
+            "id": 325,
+            "userCount": 241594,
+            "name": "Brasileiro Série A",
+            "category": {
+              "alpha2": "BR",
+              "sport": {
+                "name": "Football",
+                "slug": "football",
+                "id": 1
+              },
+              "id": 13,
+              "flag": "brazil",
+              "name": "Brazil",
+              "slug": "brazil"
+            },
+            "slug": "brasileiro-serie-a"
+          },
+          "slug": "brasileiro-serie-a",
+          "category": {
+            "alpha2": "BR",
+            "sport": {
+              "name": "Football",
+              "slug": "football",
+              "id": 1
+            },
+            "id": 13,
+            "flag": "brazil",
+            "name": "Brazil",
+            "slug": "brazil"
+          },
+          "name": "Brasileiro Serie A"
+        },
+        "time": {
+          "currentPeriodStartTimestamp": 1665280544,
+          "injuryTime2": 5,
+          "injuryTime1": 3
+        },
+        "coverage": null,
+        "awayScore": {
+          "current": 1,
+          "period2": 1,
+          "normaltime": 1,
+          "period1": 0,
+          "display": 1
+        },
+        "awayTeam": {
+          "id": 1967,
+          "nameCode": "CAP",
+          "name": "Athletico",
+          "userCount": 56930,
+          "subTeams": {},
+          "national": false,
+          "teamColors": {
+            "secondary": "#cc0000",
+            "primary": "#000000",
+            "text": "#cc0000"
+          },
+          "shortName": "Athletico",
+          "disabled": false,
+          "slug": "athletico",
+          "gender": "M",
+          "type": 0
+        },
+        "homeTeam": {
+          "id": 1957,
+          "nameCode": "COR",
+          "name": "Corinthians",
+          "userCount": 149016,
+          "subTeams": {},
+          "national": false,
+          "teamColors": {
+            "secondary": "#000000",
+            "primary": "#ffffff",
+            "text": "#000000"
+          },
+          "shortName": "Corinthians",
+          "disabled": false,
+          "slug": "corinthians",
+          "gender": "M",
+          "type": 0
+        },
+        "startTimestamp": 1665273600,
+        "id": 10113973,
+        "winnerCode": 1
+      }
+  
