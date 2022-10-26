@@ -7,25 +7,27 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Match {
-  id             Int  @id @default(autoincrement())
-  homeTeam       Json
-  awayTeam       Json
-  homeScore      Json
-  awayScore      Json
-  hasGlobalHighlights Boolean?
-  finalResultOnly Boolean?
-  customId      String?
-  status         Json?
+model public_match {
+  id                       Int      @id(map: "match_pkey") @default(autoincrement())
+  homeTeam                 Json
+  awayTeam                 Json
+  homeScore                Json
+  awayScore                Json
+  hasGlobalHighlights      Boolean?
+  finalResultOnly          Boolean?
+  customId                 String?
+  status                   Json?
   hasEventPlayerStatistics Boolean?
-  slug           String?
-  homeRedCards   Int?
-  hasEventPlayerHeatMap Boolean?
-  changes        Json?
-  roundInfo     Json?
-  tournament   Json?
-  time           Json?
-  coverage       Int?
-  startTimestamp Int
-  winnerCode     Int?
+  slug                     String?
+  homeRedCards             Int?
+  hasEventPlayerHeatMap    Boolean?
+  changes                  Json?
+  roundInfo                Json?
+  tournament               Json?
+  time                     Json?
+  coverage                 Int?
+  startTimestamp           Int
+  winnerCode               Int?
+
+  @@map("public.match")
 }

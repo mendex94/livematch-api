@@ -1,5 +1,5 @@
 import { HttpService } from '@nestjs/axios';
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
 import { lastValueFrom } from 'rxjs';
 import { PrismaService } from 'src/prisma/prisma.service';
@@ -9,7 +9,6 @@ import { CreateMatchDto } from './dto/create-match.dto';
 export class MatchService {
   private readonly FOOTAPI_URL = process.env.FOOTAPI_URL;
   private readonly FOOTAPI_KEY = process.env.FOOTAPI_KEY;
-  private readonly logger = new Logger(MatchService.name);
 
   constructor(
     private readonly prisma: PrismaService,
@@ -27,7 +26,7 @@ export class MatchService {
     };
     const response = await lastValueFrom(this.httpService.get(url, config));
     const data: CreateMatchDto = response.data.events;
-    await this.prisma.match.createMany({ data, skipDuplicates: true });
+    await this.prisma.public_match.createMany({ data, skipDuplicates: true });
   }
 
   async getMatch(page: number): Promise<any> {
@@ -40,14 +39,14 @@ export class MatchService {
     };
     const response = await lastValueFrom(this.httpService.get(url, config));
     const data: CreateMatchDto = response.data.events;
-    await this.prisma.match.createMany({ data, skipDuplicates: true });
+    await this.prisma.public_match.createMany({ data, skipDuplicates: true });
   }
 
   create(data) {
-    return this.prisma.match.create({ data });
+    return this.prisma.public_match.create({ data });
   }
 
   findAll() {
-    return this.prisma.match.findMany();
+    return this.prisma.public_match.findMany();
   }
 }
