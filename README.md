@@ -24,7 +24,7 @@
 
 ## Description
 
-Neste projeto utilizei NestJS + Prisma e Postgresql, o principal motivo dessa escolha é que o Nest oferece total suporte ao Prisma e também a CLI do Nest oferece praticitade em desenvolvimento. O resultado foi uma API que permite visualização dos jogos ao vivo da Série A do Campeonato Brasileiro e também permite a visualização dos jogos que já foram realizados.
+Neste projeto utilizei NestJS + Prisma e Postgresql, o principal motivo dessa escolha é que o Nest oferece total suporte ao Prisma e também a CLI do Nest oferece praticitade em desenvolvimento. O resultado foi uma API que permite visualização dos jogos ao vivo da Série A do Campeonato Brasileiro e também permite a visualização dos jogos que já foram realizados, para atualização dos jogos passados um serviço é executado a cada 6horas salvando os novos jogos no banco de dados.
 
 ## Documentation
 
