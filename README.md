@@ -26,6 +26,12 @@
 
 API que permite visualização dos jogos ao vivo da Série A do Campeonato Brasileiro e também permite a visualização dos jogos que já foram realizados.
 
+## Documentation
+
+```bash
+https://livematch-api.herokuapp.com/api
+```
+
 ## Installation
 
 ```bash
